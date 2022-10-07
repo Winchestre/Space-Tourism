@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Bellefair&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>Destination A</title>
+</head>
+<body class="destination">
+    <nav>
+        <img src="./assets/shared/logo.svg" alt="" class="img__logo">
+        <button class="mobile__toggler" aria-expanded="false" aria-controls="navLink"></button>
+        <div class="container">
+            <ul class="nav__links" data-visible="false" id="navLink">
+                <li class="nav-list"><a href="./index.html" class="link__nav" target="_blank"><span>00</span>Home</a></li>
+                <li class="nav-list"><a href="./Destination_A.html" class="link__nav" target="_blank"><span>01</span>Destination</a></li>
+                <li class="nav-list"><a href="./Crew_Members.html" class="link__nav" target="_blank"><span>02</span>Crew</a></li>
+                <li class="nav-list"><a href="./Technology.html" class="link__nav" target="_blank"><span>03</span>Technology</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h5><span aria-hidden="true">01</span>Pick your destination</h5>
+        <img src="./assets/destination/image-moon.webp" alt="" class="destination_img">
+        <ul class="destination_links">
+            <li class="nav-list"><a href="./Destination_A.html" class="link__nav sub_nav" aria-selected="true">moon</a></li>
+            <li class="nav-list"><a href="./Destination_Mars.html" class="link__nav sub_nav" aria-selected="false">mars</a></li>
+            <li class="nav-list"><a href="./Destination_Europa.html" class="link__nav sub_nav" aria-selected="false">europa</a></li>
+            <li class="nav-list"><a href="./Destination_Titan.html" class="link__nav sub_nav" aria-selected="false">titan</a></li>
+        </ul>
+    </main>
+
+    <section>
+        <div class="planet_section">
+            <h1>Moon</h1>
+            <p>See our planet as you have never seen it before. a Perfect relaxing trip away to help regain perspective
+                and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo II landing sites.
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="planet_distance">
+            <h3>Avg. Distance</h3>
+            <h2>384, 400 KM</h2>
+        </div>
+
+        <div class="planet_eta">
+            <h3>Est. Travel Time</h3>
+            <h2>3 Days</h2>
+        </div>
+
+
+
+    </section>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
