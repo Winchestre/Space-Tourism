@@ -104,6 +104,7 @@ span {
     font-size: .7rem;
     background: hsla(231, 77%, 90%, .1);
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     padding-top: 9em;
     padding-left: 2.3em;
     gap: 3em;
@@ -118,6 +119,7 @@ span {
 
 .mobile__toggler {
     position: absolute;
+    display: block;
     top: 2.1em;
     right: 1.5em;
     z-index: 9999;
@@ -213,9 +215,9 @@ body {
     transition: all 250ms ease;
 }
 
-.sub_nav:hover::after {
+/*.sub_nav:hover::after {
     transform: scaleX(1);
-}
+}*/
 
 .sub_nav[aria-selected='true']::after {
     transform: scaleX(1);
@@ -250,10 +252,6 @@ hr {
     margin-bottom: 2em;
 }
 
-/*.image_slider {
-    margin: 4em 0;
-}*/
-
 .crew_container {
     margin-top: 2em;
     padding-bottom: 6.5em;
@@ -284,7 +282,7 @@ hr {
     margin-left: .5em;
 }
 
-.space_nav:hover {
+.space_nav:active {
     background-color: #fff;
     color: #0B0D17;
 }
@@ -292,6 +290,14 @@ hr {
 .space_launch_content {
     margin: 2.5em 1.5em 0;
     padding-bottom: 6.5em;
+}
+
+
+/***************** MEDIA QUERY FOR TABLET DEVICES ********************/
+@media screen and (min-width: 768px) {
+    .mobile__toggler {
+        display: none;
+    }
 }
 
 /*.nav__links {
